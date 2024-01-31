@@ -1,0 +1,14 @@
+{
+  "name": "mf-habr-react-vue",
+  "version": "1.0.0",
+  "private": true,
+  "workspaces": [
+    "./vue",
+    "./react"
+  ],
+  "scripts": {
+    "dev": "pnpm --filter mf-habr-react-vue_* --parallel dev",
+    "build": "pnpm --filter mf-habr-react-vue_* --parallel build",
+    "preview": "npm run build && pnpm --filter mf-habr-react-vue_* --parallel preview"
+  }
+}
